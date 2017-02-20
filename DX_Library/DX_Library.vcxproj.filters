@@ -1,0 +1,585 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Library">
+      <UniqueIdentifier>{2845edf5-1bbd-4567-aeb0-5efa976dc273}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Debug">
+      <UniqueIdentifier>{9a5b4398-0210-47b4-98f7-71ea6290410b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\DirectX">
+      <UniqueIdentifier>{62ccf7ec-5e48-445a-814f-2da3979222d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\ObjectType">
+      <UniqueIdentifier>{fea51157-e111-4f70-95b9-615d9f2519d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Task">
+      <UniqueIdentifier>{64ae6739-ebb4-4ee1-ab76-accabc5da681}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\ObjectData">
+      <UniqueIdentifier>{42e75e9f-39fc-4002-9679-b33f35c49a06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{f4afd420-8973-4428-91ab-977f2fd1fcd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Scene">
+      <UniqueIdentifier>{70d35bc7-31b6-43f9-93d6-1eb12bffd24a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Scene\Manager">
+      <UniqueIdentifier>{f20a3704-5670-487c-8db1-9c418ecd2004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Scene\Base">
+      <UniqueIdentifier>{eef4201a-be62-4fef-97a4-c8846f854af3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Function">
+      <UniqueIdentifier>{11caa099-490f-4a3a-8f9f-2bfcc2edc2df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Title">
+      <UniqueIdentifier>{8f9542f0-9daa-448b-a68d-21c38b06e35c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\StageSelect">
+      <UniqueIdentifier>{728dc3b7-ce2a-478c-b718-ebf4484fc8d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\GameMain">
+      <UniqueIdentifier>{2bb9b6cb-d2b6-44ef-8ebc-3a3bc7974c9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Result">
+      <UniqueIdentifier>{15900600-f160-4f30-82b0-b3119357010b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\GameMain\Field">
+      <UniqueIdentifier>{2f3b59e2-e43e-4286-8372-5dc565649e7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\GameMain\Main">
+      <UniqueIdentifier>{5675e73f-f1a4-46cb-ba5b-6216f3942a12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\GameMain\Player">
+      <UniqueIdentifier>{5eaefe9b-5d84-45fe-9528-81f5b6ce5eed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\GameMain\Charactor">
+      <UniqueIdentifier>{4d6c30b9-8ff5-4aab-89f1-0dd348daf93d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\GameMain\Charactor\Base">
+      <UniqueIdentifier>{dab06c22-5823-44da-89e8-c99c58f6f1a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\GameMain\Charactor\Rook">
+      <UniqueIdentifier>{6bd30d60-2121-4701-8ab6-7c690abdf51f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\GameMain\Charactor\Bishop">
+      <UniqueIdentifier>{c7b9d130-0dcb-4c7c-9c5d-ac302477638b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\GameMain\Charactor\Knight">
+      <UniqueIdentifier>{37007743-0e94-4d59-81c2-f50b405441df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\GameMain\Charactor\Queen">
+      <UniqueIdentifier>{ca8571a3-3be1-4efa-a5e2-7404f74471eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\GameMain\Charactor\King">
+      <UniqueIdentifier>{21aa4c15-ab46-41ad-a4bd-2e280560ae17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\GameMain\Charactor\Joker">
+      <UniqueIdentifier>{704bedd2-6ec4-4b33-b430-66666fd63b0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\GameMain\Charactor\Manager">
+      <UniqueIdentifier>{0522b434-357e-42d7-89bb-db9604c7af15}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main\GameBase.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Task\Empty.cpp">
+      <Filter>Library\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Task\GameObject.cpp">
+      <Filter>Library\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectType\ObjectCamera.cpp">
+      <Filter>Library\ObjectType</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectType\ObjectDirectionLight.cpp">
+      <Filter>Library\ObjectType</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectType\Object2D.cpp">
+      <Filter>Library\ObjectType</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectType\Object3D_Model.cpp">
+      <Filter>Library\ObjectType</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectType\Object3D_Polygon.cpp">
+      <Filter>Library\ObjectType</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectData\ModelManager.cpp">
+      <Filter>Library\ObjectData</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectData\TextureManager.cpp">
+      <Filter>Library\ObjectData</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectData\LightIndex.cpp">
+      <Filter>Library\ObjectData</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectData\Model.cpp">
+      <Filter>Library\ObjectData</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\DirectX\MouthPosition.cpp">
+      <Filter>Library\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\DirectX\Window.cpp">
+      <Filter>Library\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\DirectX\Direct3D.cpp">
+      <Filter>Library\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\DirectX\DirectInputManager.cpp">
+      <Filter>Library\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\DirectX\DirectSound.cpp">
+      <Filter>Library\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectType\Collision3D.cpp">
+      <Filter>Library\ObjectType</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectType\Collision2D.cpp">
+      <Filter>Library\ObjectType</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectData\FrameMatrixTransformer.cpp">
+      <Filter>Library\ObjectData</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectData\AnimationMeshDrawer.cpp">
+      <Filter>Library\ObjectData</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectData\D3DXAllocateHierarchy.cpp">
+      <Filter>Library\ObjectData</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectData\AnimationController.cpp">
+      <Filter>Library\ObjectData</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Task\TaskManager.cpp">
+      <Filter>Library\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Function\DelayFunction.cpp">
+      <Filter>Library\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectType\Particle3D.cpp">
+      <Filter>Library\ObjectType</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectType\Particle2D.cpp">
+      <Filter>Library\ObjectType</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Task\EmptyCollision.cpp">
+      <Filter>Library\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Debug\ParticleCnt.cpp">
+      <Filter>Library\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Function\Math.cpp">
+      <Filter>Library\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Function\Time.cpp">
+      <Filter>Library\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Scene\SceneBase.cpp">
+      <Filter>Library\Scene\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Scene\SceneManager.cpp">
+      <Filter>Library\Scene\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Scene\SceneResult.cpp">
+      <Filter>Library\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Scene\SceneStageSelect.cpp">
+      <Filter>Library\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Scene\SceneTitle.cpp">
+      <Filter>Library\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Scene\SceneGameMain.cpp">
+      <Filter>Library\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectType\CameraBase.cpp">
+      <Filter>Library\ObjectType</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\DirectX\JoyStick.cpp">
+      <Filter>Library\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Field\Field.cpp">
+      <Filter>Object\GameMain\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Main\MainCamera.cpp">
+      <Filter>Object\GameMain\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Field\Sky.cpp">
+      <Filter>Object\GameMain\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Field\FieldMassManager.cpp">
+      <Filter>Object\GameMain\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Field\FieldMass.cpp">
+      <Filter>Object\GameMain\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Player\SelectMass.cpp">
+      <Filter>Object\GameMain\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\Base\CharactorBase.cpp">
+      <Filter>Object\GameMain\Charactor\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\Base\MoveMassBase.cpp">
+      <Filter>Object\GameMain\Charactor\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\Base\AtackEffectBase.cpp">
+      <Filter>Object\GameMain\Charactor\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\Base\AtackMassBase.cpp">
+      <Filter>Object\GameMain\Charactor\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\Bishop\AtackMassBishop.cpp">
+      <Filter>Object\GameMain\Charactor\Bishop</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\Bishop\CharactorBishop.cpp">
+      <Filter>Object\GameMain\Charactor\Bishop</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\Bishop\MoveMassBishop.cpp">
+      <Filter>Object\GameMain\Charactor\Bishop</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\Bishop\AtackEffectBishop.cpp">
+      <Filter>Object\GameMain\Charactor\Bishop</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\Joker\CharactorJoker.cpp">
+      <Filter>Object\GameMain\Charactor\Joker</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\Joker\MoveMassJoker.cpp">
+      <Filter>Object\GameMain\Charactor\Joker</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\Joker\AtackEffectJoker.cpp">
+      <Filter>Object\GameMain\Charactor\Joker</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\Joker\AtackMassJoker.cpp">
+      <Filter>Object\GameMain\Charactor\Joker</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\King\CharactorKing.cpp">
+      <Filter>Object\GameMain\Charactor\King</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\King\MoveMassKing.cpp">
+      <Filter>Object\GameMain\Charactor\King</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\King\AtackEffectKing.cpp">
+      <Filter>Object\GameMain\Charactor\King</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\King\AtackMassKing.cpp">
+      <Filter>Object\GameMain\Charactor\King</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\Knight\CharactorKnight.cpp">
+      <Filter>Object\GameMain\Charactor\Knight</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\Knight\MoveMassKnight.cpp">
+      <Filter>Object\GameMain\Charactor\Knight</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\Knight\AtackEffectKnight.cpp">
+      <Filter>Object\GameMain\Charactor\Knight</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\Knight\AtackMassKnight.cpp">
+      <Filter>Object\GameMain\Charactor\Knight</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\Queen\MoveMassQueen.cpp">
+      <Filter>Object\GameMain\Charactor\Queen</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\Queen\AtackEffectQueen.cpp">
+      <Filter>Object\GameMain\Charactor\Queen</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\Queen\AtackMassQueen.cpp">
+      <Filter>Object\GameMain\Charactor\Queen</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\Queen\CharactorQueen.cpp">
+      <Filter>Object\GameMain\Charactor\Queen</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\Rook\CharactorRook.cpp">
+      <Filter>Object\GameMain\Charactor\Rook</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\Rook\MoveMassRook.cpp">
+      <Filter>Object\GameMain\Charactor\Rook</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\Rook\AtackEffectRook.cpp">
+      <Filter>Object\GameMain\Charactor\Rook</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\Rook\AtackMassRook.cpp">
+      <Filter>Object\GameMain\Charactor\Rook</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Charactor\Manager\CharactorManager.cpp">
+      <Filter>Object\GameMain\Charactor\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameMain\Main\GameManager.cpp">
+      <Filter>Object\GameMain\Main</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Main\GameBase.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Task\GameObject.h">
+      <Filter>Library\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Task\Empty.h">
+      <Filter>Library\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectType\ObjectCamera.h">
+      <Filter>Library\ObjectType</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectType\ObjectDirectionLight.h">
+      <Filter>Library\ObjectType</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectType\Object2D.h">
+      <Filter>Library\ObjectType</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectType\Object3D_Model.h">
+      <Filter>Library\ObjectType</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectType\Object3D_Polygon.h">
+      <Filter>Library\ObjectType</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectData\ModelManager.h">
+      <Filter>Library\ObjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectData\TextureManager.h">
+      <Filter>Library\ObjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectData\LightIndex.h">
+      <Filter>Library\ObjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectData\Model.h">
+      <Filter>Library\ObjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\DirectX\DirectSound.h">
+      <Filter>Library\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\DirectX\MouthPosition.h">
+      <Filter>Library\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\DirectX\Window.h">
+      <Filter>Library\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\DirectX\Direct3D.h">
+      <Filter>Library\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\DirectX\DirectInputManager.h">
+      <Filter>Library\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Debug\MemoryLeakDebug.h">
+      <Filter>Library\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Debug\DebugWindow.h">
+      <Filter>Library\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Debug\FPSController.h">
+      <Filter>Library\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectType\Collision3D.h">
+      <Filter>Library\ObjectType</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectType\Collision2D.h">
+      <Filter>Library\ObjectType</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectData\FrameMatrixTransformer.h">
+      <Filter>Library\ObjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectData\AnimationMeshDrawer.h">
+      <Filter>Library\ObjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectData\D3DXAllocateHierarchy.h">
+      <Filter>Library\ObjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectData\AnimationController.h">
+      <Filter>Library\ObjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Task\TaskManager.h">
+      <Filter>Library\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Function\DelayFunction.h">
+      <Filter>Library\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Function\Define.h">
+      <Filter>Library\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectType\Particle3D.h">
+      <Filter>Library\ObjectType</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectType\Particle2D.h">
+      <Filter>Library\ObjectType</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Task\EmptyCollision.h">
+      <Filter>Library\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Debug\ParticleCnt.h">
+      <Filter>Library\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Function\Math.h">
+      <Filter>Library\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Function\Time.h">
+      <Filter>Library\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Task\ObjectFactory.h">
+      <Filter>Library\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Scene\SceneBase.h">
+      <Filter>Library\Scene\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Scene\SceneManager.h">
+      <Filter>Library\Scene\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Scene\SceneTitle.h">
+      <Filter>Library\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Scene\SceneResult.h">
+      <Filter>Library\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Scene\SceneStageSelect.h">
+      <Filter>Library\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Scene\SceneGameMain.h">
+      <Filter>Library\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Task\DepthSort.h">
+      <Filter>Library\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Function\LoadResource.h">
+      <Filter>Library\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Task\DepthData.h">
+      <Filter>Library\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectType\CameraBase.h">
+      <Filter>Library\ObjectType</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\DirectX\JoyStick.h">
+      <Filter>Library\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Title\Test2D.h">
+      <Filter>Object\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Field\Field.h">
+      <Filter>Object\GameMain\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Main\MainCamera.h">
+      <Filter>Object\GameMain\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Main\MainLight.h">
+      <Filter>Object\GameMain\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Field\Sky.h">
+      <Filter>Object\GameMain\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Field\FieldMassManager.h">
+      <Filter>Object\GameMain\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Field\FieldMass.h">
+      <Filter>Object\GameMain\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Player\SelectMass.h">
+      <Filter>Object\GameMain\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\Base\AtackMassBase.h">
+      <Filter>Object\GameMain\Charactor\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\Base\CharactorBase.h">
+      <Filter>Object\GameMain\Charactor\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\Base\MoveMassBase.h">
+      <Filter>Object\GameMain\Charactor\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\Base\AtackEffectBase.h">
+      <Filter>Object\GameMain\Charactor\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\Bishop\AtackEffectBishop.h">
+      <Filter>Object\GameMain\Charactor\Bishop</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\Bishop\AtackMassBishop.h">
+      <Filter>Object\GameMain\Charactor\Bishop</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\Bishop\CharactorBishop.h">
+      <Filter>Object\GameMain\Charactor\Bishop</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\Bishop\MoveMassBishop.h">
+      <Filter>Object\GameMain\Charactor\Bishop</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\Joker\CharactorJoker.h">
+      <Filter>Object\GameMain\Charactor\Joker</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\Joker\MoveMassJoker.h">
+      <Filter>Object\GameMain\Charactor\Joker</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\Joker\AtackEffectJoker.h">
+      <Filter>Object\GameMain\Charactor\Joker</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\Joker\AtackMassJoker.h">
+      <Filter>Object\GameMain\Charactor\Joker</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\King\AtackMassKing.h">
+      <Filter>Object\GameMain\Charactor\King</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\King\CharactorKing.h">
+      <Filter>Object\GameMain\Charactor\King</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\King\MoveMassKing.h">
+      <Filter>Object\GameMain\Charactor\King</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\King\AtackEffectKing.h">
+      <Filter>Object\GameMain\Charactor\King</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\Knight\AtackMassKnight.h">
+      <Filter>Object\GameMain\Charactor\Knight</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\Knight\CharactorKnight.h">
+      <Filter>Object\GameMain\Charactor\Knight</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\Knight\MoveMassKnight.h">
+      <Filter>Object\GameMain\Charactor\Knight</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\Knight\AtackEffectKnight.h">
+      <Filter>Object\GameMain\Charactor\Knight</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\Queen\CharactorQueen.h">
+      <Filter>Object\GameMain\Charactor\Queen</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\Queen\MoveMassQueen.h">
+      <Filter>Object\GameMain\Charactor\Queen</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\Queen\AtackEffectQueen.h">
+      <Filter>Object\GameMain\Charactor\Queen</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\Queen\AtackMassQueen.h">
+      <Filter>Object\GameMain\Charactor\Queen</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\Rook\CharactorRook.h">
+      <Filter>Object\GameMain\Charactor\Rook</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\Rook\MoveMassRook.h">
+      <Filter>Object\GameMain\Charactor\Rook</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\Rook\AtackEffectRook.h">
+      <Filter>Object\GameMain\Charactor\Rook</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\Rook\AtackMassRook.h">
+      <Filter>Object\GameMain\Charactor\Rook</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Charactor\Manager\CharactorManager.h">
+      <Filter>Object\GameMain\Charactor\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameMain\Main\GameManager.h">
+      <Filter>Object\GameMain\Main</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1220A3AB-C316-4B20-A07F-3909D77EF024}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DX_Library</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MinimalRebuild>true</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Library\Debug\ParticleCnt.cpp" />
+    <ClCompile Include="Library\DirectX\Direct3D.cpp" />
+    <ClCompile Include="Library\DirectX\DirectInputManager.cpp" />
+    <ClCompile Include="Library\DirectX\DirectSound.cpp" />
+    <ClCompile Include="Library\DirectX\JoyStick.cpp" />
+    <ClCompile Include="Library\DirectX\MouthPosition.cpp" />
+    <ClCompile Include="Library\DirectX\Window.cpp" />
+    <ClCompile Include="Library\Function\DelayFunction.cpp" />
+    <ClCompile Include="Library\Function\Math.cpp" />
+    <ClCompile Include="Library\Function\Time.cpp" />
+    <ClCompile Include="Library\ObjectData\AnimationController.cpp" />
+    <ClCompile Include="Library\ObjectData\AnimationMeshDrawer.cpp" />
+    <ClCompile Include="Library\ObjectData\D3DXAllocateHierarchy.cpp" />
+    <ClCompile Include="Library\ObjectData\FrameMatrixTransformer.cpp" />
+    <ClCompile Include="Library\ObjectData\LightIndex.cpp" />
+    <ClCompile Include="Library\ObjectData\Model.cpp" />
+    <ClCompile Include="Library\ObjectData\ModelManager.cpp" />
+    <ClCompile Include="Library\ObjectData\TextureManager.cpp" />
+    <ClCompile Include="Library\ObjectType\CameraBase.cpp" />
+    <ClCompile Include="Library\ObjectType\Collision2D.cpp" />
+    <ClCompile Include="Library\ObjectType\Collision3D.cpp" />
+    <ClCompile Include="Library\ObjectType\Object2D.cpp" />
+    <ClCompile Include="Library\ObjectType\Object3D_Model.cpp" />
+    <ClCompile Include="Library\ObjectType\Object3D_Polygon.cpp" />
+    <ClCompile Include="Library\ObjectType\ObjectCamera.cpp" />
+    <ClCompile Include="Library\ObjectType\ObjectDirectionLight.cpp" />
+    <ClCompile Include="Library\ObjectType\Particle2D.cpp" />
+    <ClCompile Include="Library\ObjectType\Particle3D.cpp" />
+    <ClCompile Include="Library\Scene\SceneBase.cpp" />
+    <ClCompile Include="Library\Scene\SceneGameMain.cpp" />
+    <ClCompile Include="Library\Scene\SceneManager.cpp" />
+    <ClCompile Include="Library\Scene\SceneResult.cpp" />
+    <ClCompile Include="Library\Scene\SceneStageSelect.cpp" />
+    <ClCompile Include="Library\Scene\SceneTitle.cpp" />
+    <ClCompile Include="Library\Task\Empty.cpp" />
+    <ClCompile Include="Library\Task\EmptyCollision.cpp" />
+    <ClCompile Include="Library\Task\GameObject.cpp" />
+    <ClCompile Include="Library\Task\TaskManager.cpp" />
+    <ClCompile Include="Main\GameBase.cpp" />
+    <ClCompile Include="Main\main.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\Base\AtackEffectBase.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\Base\AtackMassBase.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\Base\CharactorBase.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\Base\MoveMassBase.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\Bishop\AtackEffectBishop.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\Bishop\AtackMassBishop.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\Bishop\CharactorBishop.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\Bishop\MoveMassBishop.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\Joker\AtackEffectJoker.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\Joker\AtackMassJoker.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\Joker\CharactorJoker.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\Joker\MoveMassJoker.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\King\AtackEffectKing.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\King\AtackMassKing.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\King\CharactorKing.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\King\MoveMassKing.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\Knight\AtackEffectKnight.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\Knight\AtackMassKnight.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\Knight\CharactorKnight.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\Knight\MoveMassKnight.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\Manager\CharactorManager.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\Queen\AtackEffectQueen.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\Queen\AtackMassQueen.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\Queen\CharactorQueen.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\Queen\MoveMassQueen.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\Rook\AtackEffectRook.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\Rook\AtackMassRook.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\Rook\CharactorRook.cpp" />
+    <ClCompile Include="Object\GameMain\Charactor\Rook\MoveMassRook.cpp" />
+    <ClCompile Include="Object\GameMain\Field\Field.cpp" />
+    <ClCompile Include="Object\GameMain\Field\FieldMass.cpp" />
+    <ClCompile Include="Object\GameMain\Field\FieldMassManager.cpp" />
+    <ClCompile Include="Object\GameMain\Field\Sky.cpp" />
+    <ClCompile Include="Object\GameMain\Main\GameManager.cpp" />
+    <ClCompile Include="Object\GameMain\Main\MainCamera.cpp" />
+    <ClCompile Include="Object\GameMain\Player\SelectMass.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Library\Debug\DebugWindow.h" />
+    <ClInclude Include="Library\Debug\FPSController.h" />
+    <ClInclude Include="Library\Debug\MemoryLeakDebug.h" />
+    <ClInclude Include="Library\Debug\ParticleCnt.h" />
+    <ClInclude Include="Library\DirectX\Direct3D.h" />
+    <ClInclude Include="Library\DirectX\DirectInputManager.h" />
+    <ClInclude Include="Library\DirectX\DirectSound.h" />
+    <ClInclude Include="Library\DirectX\JoyStick.h" />
+    <ClInclude Include="Library\DirectX\MouthPosition.h" />
+    <ClInclude Include="Library\DirectX\Window.h" />
+    <ClInclude Include="Library\Function\Define.h" />
+    <ClInclude Include="Library\Function\DelayFunction.h" />
+    <ClInclude Include="Library\Function\LoadResource.h" />
+    <ClInclude Include="Library\Function\Math.h" />
+    <ClInclude Include="Library\Function\Time.h" />
+    <ClInclude Include="Library\ObjectData\AnimationController.h" />
+    <ClInclude Include="Library\ObjectData\AnimationMeshDrawer.h" />
+    <ClInclude Include="Library\ObjectData\D3DXAllocateHierarchy.h" />
+    <ClInclude Include="Library\ObjectData\FrameMatrixTransformer.h" />
+    <ClInclude Include="Library\ObjectData\LightIndex.h" />
+    <ClInclude Include="Library\ObjectData\Model.h" />
+    <ClInclude Include="Library\ObjectData\ModelManager.h" />
+    <ClInclude Include="Library\ObjectData\TextureManager.h" />
+    <ClInclude Include="Library\ObjectType\CameraBase.h" />
+    <ClInclude Include="Library\ObjectType\Collision2D.h" />
+    <ClInclude Include="Library\ObjectType\Collision3D.h" />
+    <ClInclude Include="Library\ObjectType\Object2D.h" />
+    <ClInclude Include="Library\ObjectType\Object3D_Model.h" />
+    <ClInclude Include="Library\ObjectType\Object3D_Polygon.h" />
+    <ClInclude Include="Library\ObjectType\ObjectCamera.h" />
+    <ClInclude Include="Library\ObjectType\ObjectDirectionLight.h" />
+    <ClInclude Include="Library\ObjectType\Particle2D.h" />
+    <ClInclude Include="Library\ObjectType\Particle3D.h" />
+    <ClInclude Include="Library\Scene\SceneBase.h" />
+    <ClInclude Include="Library\Scene\SceneGameMain.h" />
+    <ClInclude Include="Library\Scene\SceneManager.h" />
+    <ClInclude Include="Library\Scene\SceneResult.h" />
+    <ClInclude Include="Library\Scene\SceneStageSelect.h" />
+    <ClInclude Include="Library\Scene\SceneTitle.h" />
+    <ClInclude Include="Library\Task\DepthData.h" />
+    <ClInclude Include="Library\Task\DepthSort.h" />
+    <ClInclude Include="Library\Task\Empty.h" />
+    <ClInclude Include="Library\Task\EmptyCollision.h" />
+    <ClInclude Include="Library\Task\GameObject.h" />
+    <ClInclude Include="Library\Task\ObjectFactory.h" />
+    <ClInclude Include="Library\Task\TaskManager.h" />
+    <ClInclude Include="Main\GameBase.h" />
+    <ClInclude Include="Object\GameMain\Charactor\Base\AtackEffectBase.h" />
+    <ClInclude Include="Object\GameMain\Charactor\Base\AtackMassBase.h" />
+    <ClInclude Include="Object\GameMain\Charactor\Base\CharactorBase.h" />
+    <ClInclude Include="Object\GameMain\Charactor\Base\MoveMassBase.h" />
+    <ClInclude Include="Object\GameMain\Charactor\Bishop\AtackEffectBishop.h" />
+    <ClInclude Include="Object\GameMain\Charactor\Bishop\AtackMassBishop.h" />
+    <ClInclude Include="Object\GameMain\Charactor\Bishop\CharactorBishop.h" />
+    <ClInclude Include="Object\GameMain\Charactor\Bishop\MoveMassBishop.h" />
+    <ClInclude Include="Object\GameMain\Charactor\Joker\AtackEffectJoker.h" />
+    <ClInclude Include="Object\GameMain\Charactor\Joker\AtackMassJoker.h" />
+    <ClInclude Include="Object\GameMain\Charactor\Joker\CharactorJoker.h" />
+    <ClInclude Include="Object\GameMain\Charactor\Joker\MoveMassJoker.h" />
+    <ClInclude Include="Object\GameMain\Charactor\King\AtackEffectKing.h" />
+    <ClInclude Include="Object\GameMain\Charactor\King\AtackMassKing.h" />
+    <ClInclude Include="Object\GameMain\Charactor\King\CharactorKing.h" />
+    <ClInclude Include="Object\GameMain\Charactor\King\MoveMassKing.h" />
+    <ClInclude Include="Object\GameMain\Charactor\Knight\AtackEffectKnight.h" />
+    <ClInclude Include="Object\GameMain\Charactor\Knight\AtackMassKnight.h" />
+    <ClInclude Include="Object\GameMain\Charactor\Knight\CharactorKnight.h" />
+    <ClInclude Include="Object\GameMain\Charactor\Knight\MoveMassKnight.h" />
+    <ClInclude Include="Object\GameMain\Charactor\Manager\CharactorManager.h" />
+    <ClInclude Include="Object\GameMain\Charactor\Queen\AtackEffectQueen.h" />
+    <ClInclude Include="Object\GameMain\Charactor\Queen\AtackMassQueen.h" />
+    <ClInclude Include="Object\GameMain\Charactor\Queen\CharactorQueen.h" />
+    <ClInclude Include="Object\GameMain\Charactor\Queen\MoveMassQueen.h" />
+    <ClInclude Include="Object\GameMain\Charactor\Rook\AtackEffectRook.h" />
+    <ClInclude Include="Object\GameMain\Charactor\Rook\AtackMassRook.h" />
+    <ClInclude Include="Object\GameMain\Charactor\Rook\CharactorRook.h" />
+    <ClInclude Include="Object\GameMain\Charactor\Rook\MoveMassRook.h" />
+    <ClInclude Include="Object\GameMain\Field\Field.h" />
+    <ClInclude Include="Object\GameMain\Field\FieldMass.h" />
+    <ClInclude Include="Object\GameMain\Field\FieldMassManager.h" />
+    <ClInclude Include="Object\GameMain\Field\Sky.h" />
+    <ClInclude Include="Object\GameMain\Main\GameManager.h" />
+    <ClInclude Include="Object\GameMain\Main\MainCamera.h" />
+    <ClInclude Include="Object\GameMain\Main\MainLight.h" />
+    <ClInclude Include="Object\GameMain\Player\SelectMass.h" />
+    <ClInclude Include="Object\Title\Test2D.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
